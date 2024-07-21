@@ -4,3 +4,14 @@
     padding: 10px;
     background: #ffffff;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .left {
+    flex-grow: 1;
+  }
+  .right {
+    flex-grow: 1;
+  }
