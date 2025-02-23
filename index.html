@@ -2,82 +2,87 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     <link rel="stylesheet" href="./style.css">
     <!-- これはサイトバーに表示されるタイトル -->
-    <title>人工合唱評価 テスト</title>
+    <title>人工合唱評価</title>
   </head>
   <body>
     <div class="title">
-        <h1>東海地区中間発表　歌声サイト</h1>
+        <h1>2025春季音響学会　デモサイト</h1>
     </div>
     <script src="MOS.js"></script>
     <div id="Display1">
     <h2>実験1 揺らぎの有無による斉唱の自然性への影響</h2>
         <table border="1">
-          <th width="20%">timing</th><th width="20%">f0</th><th width="20%">voice</th><th>音声</th><th width="20%">スコア↑</th>
+          <th>音声サンプル</th><th width="15%">timing</th><th width="15%">\begin{align}f_0\end{align}</th><th width="15%">spectrum</th><th width="18%">MOSスコア↑</th>
               <tr>
-                <th>×</th>
-                <th>×</th>
-                <th>×</th>
                 <td><audio src="./site_sound/1st_color____.wav" controls preload="auto"></audio></td>
-                <th>1.56±0.15</th>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center">1.56±0.15</td>
               </tr>
               <tr>
-                <th>○</th>
-                <th>×</th>
-                <th>×</th>
                 <td><audio src="./site_sound/1st_color_t__.wav" controls preload="auto"></audio></td>
-                <th>3.94±0.11</th>
+                <td align="center">✓</td>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center">*3.94±0.11</td>
               </tr>
               <tr>
-                <th>×</th>
-                <th>○</th>
-                <th>×</th>
                 <td><audio src="./site_sound/1st_color__f_.wav" controls preload="auto"></audio></td>
-                <th>3.80±0.11</th>
+                <td align="center"></td>
+                <td align="center">✓</td>
+                <td align="center"></td>
+                <td align="center">*3.80±0.11</td>
               </tr>
               <tr>
-                <th>×</th>
-                <th>×</th>
-                <th>○</th>
                 <td><audio src="./site_sound/1st_color___a.wav" controls preload="auto"></audio></td>
-                <th>1.66±0.16</th>
+                <td align="center"></td>
+                <td align="center"></td>
+                <td align="center">✓</td>
+                <td align="center">1.66±0.16</td>
               </tr>
               <tr>
-                <th>○</th>
-                <th>○</th>
-                <th>×</th>
                 <td><audio src="./site_sound/1st_color_tf_.wav" controls preload="auto"></audio></td>
-                <th>4.10±0.10</th>
+                <td align="center">✓</td>
+                <td align="center">✓</td>
+                <td align="center"></td>
+                <td align="center">**4.10±0.10</td>
               </tr>
               <tr>
-                <th>×</th>
-                <th>○</th>
-                <th>○</th>
                 <td><audio src="./site_sound/1st_color__fa.wav" controls preload="auto"></audio></td>
-                <th>4.04±0.11</th>
+                <td align="center"></td>
+                <td align="center">✓</td>
+                <td align="center">✓</td>
+                <td align="center">**4.04±0.11</td>
               </tr>
               <tr>
-                <th>○</th>
-                <th>×</th>
-                <th>○</th>
                 <td><audio src="./site_sound/1st_color_t_a.wav" controls preload="auto"></audio></td>
-                <th>4.06±0.11</th>
+                <td align="center">✓</td>
+                <td align="center"></td>
+                <td align="center">✓</td>
+                <td align="center">**4.06±0.11</td>
               </tr>
               <tr>
-                <th>○</th>
-                <th>○</th>
-                <th>○</th>
                 <td><audio src="./site_sound/1st_color_tfa.wav" controls preload="auto"></audio></td>
-                <th>4.14±0.11</th>
+                <td align="center">✓</td>
+                <td align="center">✓</td>
+                <td align="center">✓</td>
+                <td align="center">**<b>4.14±0.11</b></td>
               </tr>
         </table>
+        *,**は有意差が認められないことを表す(P < 0.05)
+        <p></p>
         <h2>実験2 歌唱人数による斉唱への影響の調査</h2>
         <div class="wrapper">
           <div class="left">
-            <h3>人工音声</h3>
+            <h3>合成歌声</h3>
             <table border="1">
-              <th width="20%">歌唱人数</th><th>音声</th>
+              <th width="25%">歌唱人数</th><th>音声</th>
                 <tr>
                   <th>2人</th>
                   <td><audio src="./site_sound/namine_ritsu_1st_color_seg4_tfa_mixed_002sounds_2024-05-03-14h10m56s.wav" controls preload="auto"></audio></td>
@@ -108,10 +113,10 @@
                 </tr>
             </table>
           </div>
-          <div class="right">
-            <h3>歌声コーパス</h3>
+          <div class="center">
+            <h3>実歌声</h3>
               <table border="1">
-                <th width="20%">歌唱人数</th><th>音声</th>
+                <th width="25%">歌唱人数</th><th>音声</th>
                   <tr>
                     <th>2人</th>
                     <td><audio src="./site_sound/jvs_music_katatsumuri_female_high_mixed_2sounds_2024-04-30-12h48m17s.wav" controls preload="auto"></audio></td>
@@ -130,7 +135,11 @@
                   </tr>
               </table>
           </div>
+          <div class="right">
+          </div>
       </div>
+      <p></p>
+      <img src="./Singing_num_result.png" width="60%">
   </div>
   </body>
 </html>

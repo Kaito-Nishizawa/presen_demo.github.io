@@ -7,9 +7,12 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .left {
+    flex-grow: 1;
+  }
+  .center{
     flex-grow: 1;
   }
   .right {
